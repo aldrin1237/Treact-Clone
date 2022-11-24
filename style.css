@@ -29,12 +29,17 @@ h1 {
     font-size: 30px;
 }
 
+h2 {
+    font-size: 48px;
+    color: #243e63;
+}
+
 .purple {
     color: #6415ff;
 }
 
 .container {
-    padding: 48px 32px;
+    padding: 64px 32px;
     display: flex;
 }
 
@@ -63,7 +68,8 @@ h1 {
     margin-right: 24px;
 }
 
-.nav_link-circle {
+.nav_link-circle,
+.learn_circle {
     font-size: 14px;
     color: #f7fafc;
     border: solid 1px #6415ff;
@@ -148,11 +154,13 @@ h1 {
 }
 
 .features_title {
-    font-size: 48px;
     margin-top: 16px;
 }
 
-.features_purple {
+.features_purple,
+.learn_purple,
+.steps_purple,
+.values_purple {
     color: #6415ff;
     font-weight: bold;
 }
@@ -163,7 +171,7 @@ h1 {
 }
 
 .features_para {
-    padding: 24px 100px;
+    margin: 32px 80px;
 }
 
 .services {
@@ -187,13 +195,93 @@ h1 {
     margin-top: 8px;
 }
 
-.fa-shield::before {
+.fa-shield::before,
+.fa-headset::before,
+.fa-sliders::before,
+.fa-arrow-right-arrow-left::before,
+.fa-bolt::before,
+.fa-user-clock::before
+ {
     border: 1px solid #7c8ba1;
+    font-size: 16px;
     border-radius: 50%;
     padding: 8px;
     color: #6415ff;
+    margin-right: 8px;
 }
 
-.fa-shield {
-    margin-right: 16px;
+/* LEARN */
+
+.learn_texts,
+.values_texts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
+
+.learn_title,
+.learn_para,
+.values_title,
+.values_para {
+    margin-top: 16px;
+}
+
+.learn_circle {
+    margin-top: 32px;
+    width: 120px;
+    text-align: center;
+}
+
+.learn_img,
+.values_img {
+    width: 50%;
+    align-self: center;
+    padding-left: 32px;
+}
+
+/* STEPS  */
+
+.steps_img {
+    width: 50%;
+    align-self: center;
+}
+
+.steps_texts {
+    width: 50%;
+    padding-left: 32px;
+}
+
+.steps_title {
+    margin-top: 16px;
+}
+
+.steps_list {
+    display: flex;
+    margin-top: 32px;
+}
+
+.steps_list_number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.steps_list_title {
+    color: #243e63;
+    font-size: 20px;
+}
+
+.steps_list_para {
+    color: #718096;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.steps_text_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+/* VALUES  */
+
